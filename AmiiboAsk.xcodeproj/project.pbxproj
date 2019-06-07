@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62020A3322A9781B00D611AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A3222A9781B00D611AD /* AppDelegate.swift */; };
+		62020A3522A9781B00D611AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A3422A9781B00D611AD /* ViewController.swift */; };
+		62020A3822A9781B00D611AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62020A3622A9781B00D611AD /* Main.storyboard */; };
+		62020A3A22A9781D00D611AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62020A3922A9781D00D611AD /* Assets.xcassets */; };
+		62020A3D22A9781D00D611AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62020A3B22A9781D00D611AD /* LaunchScreen.storyboard */; };
+		62020A4522A9785D00D611AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A4422A9785D00D611AD /* User.swift */; };
+		62020A4722A97AA300D611AD /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A4622A97AA300D611AD /* SessionManager.swift */; };
+		62020A4922A97CE000D611AD /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A4822A97CE000D611AD /* colors.swift */; };
+		62020A4B22A9851800D611AD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A4A22A9851800D611AD /* CustomTextField.swift */; };
+		62020A4D22A9908400D611AD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A4C22A9908400D611AD /* CustomButton.swift */; };
+		62020A5322A99AC000D611AD /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5222A99AC000D611AD /* CustomCollectionViewCell.swift */; };
+		62020A5522A9D25200D611AD /* ItemsCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5422A9D25200D611AD /* ItemsCollectionController.swift */; };
+		62020A5722A9F37F00D611AD /* Amiibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5622A9F37F00D611AD /* Amiibo.swift */; };
+		62020A5922A9F51000D611AD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5822A9F51000D611AD /* NetworkingManager.swift */; };
+		62020A5B22AA10C800D611AD /* AmiiboMajor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5A22AA10C800D611AD /* AmiiboMajor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62020A2F22A9781B00D611AD /* AmiiboAsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmiiboAsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62020A3222A9781B00D611AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62020A3422A9781B00D611AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62020A3722A9781B00D611AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62020A3922A9781D00D611AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62020A3C22A9781D00D611AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62020A3E22A9781D00D611AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62020A4422A9785D00D611AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		62020A4622A97AA300D611AD /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		62020A4822A97CE000D611AD /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		62020A4A22A9851800D611AD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		62020A4C22A9908400D611AD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		62020A5222A99AC000D611AD /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		62020A5422A9D25200D611AD /* ItemsCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionController.swift; sourceTree = "<group>"; };
+		62020A5622A9F37F00D611AD /* Amiibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiibo.swift; sourceTree = "<group>"; };
+		62020A5822A9F51000D611AD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		62020A5A22AA10C800D611AD /* AmiiboMajor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboMajor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62020A2C22A9781B00D611AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62020A2622A9781B00D611AD = {
+			isa = PBXGroup;
+			children = (
+				62020A3122A9781B00D611AD /* AmiiboAsk */,
+				62020A3022A9781B00D611AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62020A3022A9781B00D611AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62020A2F22A9781B00D611AD /* AmiiboAsk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62020A3122A9781B00D611AD /* AmiiboAsk */ = {
+			isa = PBXGroup;
+			children = (
+				62020A5122A99A9000D611AD /* Networking */,
+				62020A5022A99A6900D611AD /* Controller */,
+				62020A4F22A99A6300D611AD /* Model */,
+				62020A4E22A99A5D00D611AD /* View */,
+				62020A3222A9781B00D611AD /* AppDelegate.swift */,
+				62020A3922A9781D00D611AD /* Assets.xcassets */,
+				62020A3E22A9781D00D611AD /* Info.plist */,
+			);
+			path = AmiiboAsk;
+			sourceTree = "<group>";
+		};
+		62020A4E22A99A5D00D611AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62020A4A22A9851800D611AD /* CustomTextField.swift */,
+				62020A4C22A9908400D611AD /* CustomButton.swift */,
+				62020A3622A9781B00D611AD /* Main.storyboard */,
+				62020A3B22A9781D00D611AD /* LaunchScreen.storyboard */,
+				62020A5222A99AC000D611AD /* CustomCollectionViewCell.swift */,
+				62020A4822A97CE000D611AD /* colors.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62020A4F22A99A6300D611AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62020A4422A9785D00D611AD /* User.swift */,
+				62020A4622A97AA300D611AD /* SessionManager.swift */,
+				62020A5622A9F37F00D611AD /* Amiibo.swift */,
+				62020A5A22AA10C800D611AD /* AmiiboMajor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62020A5022A99A6900D611AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62020A3422A9781B00D611AD /* ViewController.swift */,
+				62020A5422A9D25200D611AD /* ItemsCollectionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		62020A5122A99A9000D611AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				62020A5822A9F51000D611AD /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62020A2E22A9781B00D611AD /* AmiiboAsk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62020A4122A9781D00D611AD /* Build configuration list for PBXNativeTarget "AmiiboAsk" */;
+			buildPhases = (
+				62020A2B22A9781B00D611AD /* Sources */,
+				62020A2C22A9781B00D611AD /* Frameworks */,
+				62020A2D22A9781B00D611AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmiiboAsk;
+			productName = AmiiboAsk;
+			productReference = 62020A2F22A9781B00D611AD /* AmiiboAsk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62020A2722A9781B00D611AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ItandehuiP;
+				TargetAttributes = {
+					62020A2E22A9781B00D611AD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 62020A2A22A9781B00D611AD /* Build configuration list for PBXProject "AmiiboAsk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62020A2622A9781B00D611AD;
+			productRefGroup = 62020A3022A9781B00D611AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62020A2E22A9781B00D611AD /* AmiiboAsk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62020A2D22A9781B00D611AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62020A3D22A9781D00D611AD /* LaunchScreen.storyboard in Resources */,
+				62020A3A22A9781D00D611AD /* Assets.xcassets in Resources */,
+				62020A3822A9781B00D611AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62020A2B22A9781B00D611AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62020A3522A9781B00D611AD /* ViewController.swift in Sources */,
+				62020A4922A97CE000D611AD /* colors.swift in Sources */,
+				62020A4D22A9908400D611AD /* CustomButton.swift in Sources */,
+				62020A5322A99AC000D611AD /* CustomCollectionViewCell.swift in Sources */,
+				62020A4B22A9851800D611AD /* CustomTextField.swift in Sources */,
+				62020A3322A9781B00D611AD /* AppDelegate.swift in Sources */,
+				62020A5B22AA10C800D611AD /* AmiiboMajor.swift in Sources */,
+				62020A5722A9F37F00D611AD /* Amiibo.swift in Sources */,
+				62020A5922A9F51000D611AD /* NetworkingManager.swift in Sources */,
+				62020A4522A9785D00D611AD /* User.swift in Sources */,
+				62020A4722A97AA300D611AD /* SessionManager.swift in Sources */,
+				62020A5522A9D25200D611AD /* ItemsCollectionController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62020A3622A9781B00D611AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62020A3722A9781B00D611AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62020A3B22A9781D00D611AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62020A3C22A9781D00D611AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62020A3F22A9781D00D611AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62020A4022A9781D00D611AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62020A4222A9781D00D611AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45JG3Z5RCT;
+				INFOPLIST_FILE = AmiiboAsk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ItandehuiP.com.AmiiboAsk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62020A4322A9781D00D611AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45JG3Z5RCT;
+				INFOPLIST_FILE = AmiiboAsk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ItandehuiP.com.AmiiboAsk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62020A2A22A9781B00D611AD /* Build configuration list for PBXProject "AmiiboAsk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62020A3F22A9781D00D611AD /* Debug */,
+				62020A4022A9781D00D611AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62020A4122A9781D00D611AD /* Build configuration list for PBXNativeTarget "AmiiboAsk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62020A4222A9781D00D611AD /* Debug */,
+				62020A4322A9781D00D611AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62020A2722A9781B00D611AD /* Project object */;
+}
