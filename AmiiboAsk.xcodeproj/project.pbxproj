@@ -22,6 +22,7 @@
 		62020A5722A9F37F00D611AD /* Amiibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5622A9F37F00D611AD /* Amiibo.swift */; };
 		62020A5922A9F51000D611AD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5822A9F51000D611AD /* NetworkingManager.swift */; };
 		62020A5B22AA10C800D611AD /* AmiiboMajor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62020A5A22AA10C800D611AD /* AmiiboMajor.swift */; };
+		6202DBBD22AAF2870074DC64 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6202DBBC22AAF2870074DC64 /* SDWebImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		62020A5622A9F37F00D611AD /* Amiibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiibo.swift; sourceTree = "<group>"; };
 		62020A5822A9F51000D611AD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		62020A5A22AA10C800D611AD /* AmiiboMajor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboMajor.swift; sourceTree = "<group>"; };
+		6202DBBC22AAF2870074DC64 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6202DBBD22AAF2870074DC64 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 		62020A3122A9781B00D611AD /* AmiiboAsk */ = {
 			isa = PBXGroup;
 			children = (
+				6202DBBC22AAF2870074DC64 /* SDWebImage.framework */,
 				62020A5122A99A9000D611AD /* Networking */,
 				62020A5022A99A6900D611AD /* Controller */,
 				62020A4F22A99A6300D611AD /* Model */,
@@ -136,6 +140,7 @@
 				62020A2B22A9781B00D611AD /* Sources */,
 				62020A2C22A9781B00D611AD /* Frameworks */,
 				62020A2D22A9781B00D611AD /* Resources */,
+				6202DBBE22AAF30F0074DC64 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -191,6 +196,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6202DBBE22AAF30F0074DC64 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62020A2B22A9781B00D611AD /* Sources */ = {
@@ -356,6 +383,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45JG3Z5RCT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AmiiboAsk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,6 +405,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45JG3Z5RCT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AmiiboAsk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

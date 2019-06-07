@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ItemsCollectionController: UIViewController {
 
@@ -20,12 +21,12 @@ class ItemsCollectionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissParentVC()
-        let actInd = self.showActivityIndicatory(uiView: self.view )
+        weak var actInd = self.showActivityIndicatory(uiView: self.view )
         AmiiboApiManager().executeGetAllAmiibos() { (amiibos : [Amiibo ]) in
             self.dataSourceAmiibos = amiibos
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
-                actInd.stopAnimating()
+                actInd!.stopAnimating()
             }
         }
     }
@@ -71,7 +72,8 @@ extension ItemsCollectionController: UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postCellIdentifier", for: indexPath) as? CustomCollectionViewCell else { return UICollectionViewCell() }
         let amiibo = dataSourceAmiibos[indexPath.row ]
-        cell.imagePortrait.downloaded(from: amiibo.image!) 
+        ///It downloads the image using SDWebImage Framework
+        cell.imagePortrait.sd_setImage(with: URL(string: amiibo.image!), placeholderImage: UIImage(named: "placeholderImge.png"))
         cell.headName.text = amiibo.name
         cell.subheadName.text = amiibo.amiiboSeries
         return cell
@@ -105,28 +107,4 @@ extension ItemsCollectionController: UICollectionViewDelegateFlowLayout {
     
 }
 
-extension UIImageView {
-    /**
-     It downloads the image asynchronusly
-     
-     - Remark: The images and the amiibos could be saved persistently, that functionality has not been implented in this version
- */
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  
-        contentMode = mode
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-            DispatchQueue.main.async() {
-                self.image = image
-            }
-            }.resume()
-    }
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  
-        guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
-    }
-}
+
