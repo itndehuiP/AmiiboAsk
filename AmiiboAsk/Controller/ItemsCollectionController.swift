@@ -20,10 +20,12 @@ class ItemsCollectionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissParentVC()
+        let actInd = self.showActivityIndicatory(uiView: self.view )
         AmiiboApiManager().executeGetAllAmiibos() { (amiibos : [Amiibo ]) in
             self.dataSourceAmiibos = amiibos
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
+                actInd.stopAnimating()
             }
         }
     }
@@ -46,6 +48,18 @@ class ItemsCollectionController: UIViewController {
     func dismissParentVC() {
         guard let parentCV = self.presentingViewController as? ViewController else { return }
         parentCV.dismiss(animated: false)
+    }
+    
+    /// It creates an activity indicator and add it while the data it´s been loaded
+    func showActivityIndicatory( uiView: UIView ) -> UIActivityIndicatorView {
+        let actInd = UIActivityIndicatorView()
+        actInd.frame = CGRect(x: 0.0, y: 0.0, width: 60.0, height: 60.0)
+        actInd.center = uiView.center
+        actInd.hidesWhenStopped = true
+        actInd.style = .gray
+        uiView.addSubview(actInd)
+        actInd.startAnimating()
+        return actInd
     }
 }
 
